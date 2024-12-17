@@ -1,6 +1,5 @@
-import React from 'react'
 import { HiBars3 } from "react-icons/hi2";
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 
 function Header() {
