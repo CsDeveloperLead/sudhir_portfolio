@@ -13,8 +13,8 @@ function Header() {
         <div className='hidden md:flex font-satoshi justify-center items-center gap-14 lg:gap-20 lg:text-lg'>
             <NavLink to='/' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Home</NavLink>
             <span>Work</span>
-            <span>Events</span>
-            <span>Contact us</span>
+            <NavLink to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Events</NavLink>
+            <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Contact</NavLink>
         </div>
         <div className='w-auto h-auto flex gap-4 justify-center items-center'>
             <div className='h-11 w-11 flex flex-col justify-center gap-2 items-center border-2 border-black rounded-full'>

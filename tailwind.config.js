@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'], // Add 'satoshi' as a font family
+        satoshi: ['Satoshi', 'sans-serif'], // Custom Satoshi font
       },
     },
   },
