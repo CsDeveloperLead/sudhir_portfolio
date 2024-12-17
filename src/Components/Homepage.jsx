@@ -2,6 +2,9 @@ import React from 'react'
 import LandingPage from './HomePageComponents/LandingPage'
 import Section2 from './HomePageComponents/Section2'
 import Section3 from './HomePageComponents/Section3'
+import BlogSection from './HomePageComponents/BlogSection'
+import ContactSection from './HomePageComponents/ContactSection'
+import Footer from './Footer'
 
 function Homepage() {
   return (
@@ -9,6 +12,9 @@ function Homepage() {
       <LandingPage />
       <Section2 />
       <Section3 />
+      <BlogSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }
