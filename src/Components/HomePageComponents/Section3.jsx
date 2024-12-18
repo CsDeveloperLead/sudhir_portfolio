@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 function Section3() {
     return (
-        <div className='w-full h-auto flex flex-col px-5 my-5 gap-4 sm:flex-row sm:justify-center md:gap-10 lg:gap-20 xl:gap-32 md:my-10 lg:px-10'>
-            <div className='w-full relative h-[450px] sm:w-[45%] md:w-[40%] lg:h-[550px] xl:w-[35%] 2xl:w-[30%] xl:h-[600px]'>
+        <div className='w-full h-auto flex flex-col px-5 my-5 gap-4 sm:flex-row sm:justify-between md:gap-10 lg:gap-20 md:my-10 lg:px-10 2xl:px-20'>
+            <div className='w-full relative h-[450px] sm:w-[45%] md:w-[40%] lg:h-[550px] xl:w-[35%] 2xl:w-[35%] xl:h-[600px]'>
                 <img src={ProfilePic} alt="profile image" className='h-full w-full rounded-3xl' />
                 <img src={Card3} alt="card" className='absolute -top-5 -right-4 h-40 w-32 sm:-right-7 sm:-top-10 md:-right-12 md:h-48 md:w-36 xl:md:h-60 xl:w-48 xl:-right-20' />
             </div>

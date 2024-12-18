@@ -12,7 +12,7 @@ import Marquee from 'react-fast-marquee';
 function LandingPage() {
     return (
         <>
-            <div className='w-full h-auto flex flex-col px-5 my-5 gap-10 md:flex-row-reverse lg:justify-between lg:px-10 2xl:px-20 xl:justify-center xl:gap-28'>
+            <div className='w-full h-auto flex flex-col px-5 my-5 gap-10 md:flex-row-reverse lg:justify-between lg:px-10 2xl:px-20 xl:justify-between xl:gap-28'>
                 <div className='w-full h-auto flex flex-col gap-3 md:w-[50%] lg:w-[60%] xl:w-[45%] lg:gap-5 lg:pt-4'>
                     <h1 className='text-xl font-satoshi flex items-center gap-1.5 font-bold sm:text-2xl md:text-xl lg:text-2xl'>
                         Hi <MdWavingHand size={25} className='text-[#EBBC00] transform -scale-x-100' />, I'm <a href="https://www.linkedin.com/in/sudhir-kumar-chouhan/" className='underline underline-offset-4' target='_blank'>Sudhir Kumar Chouhan</a>
