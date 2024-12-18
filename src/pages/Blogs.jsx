@@ -26,13 +26,13 @@ const Blogs = () => {
       ];
   return (
     <div className="mx-4 md:mx-10 mt-8 md:mt-10">
-    <div className="w-full flex flex-col gap-14">
+    <div className="w-full flex flex-col gap-4 md:gap-14">
       <h1 className="font-semibold text-3xl md:text-[95px]">
         My Blogs
       </h1>
-      <div className='w-full flex gap-2'>
-        <span className='w-1/4 text-xl text-[#8e7777]'>I turn ideas into impactful designs</span>
-        <span className="w-3/4 border-b-2 border-black "></span>
+      <div className='w-full flex flex-col md:flex-row gap-2'>
+        <span className='w-full md:w-1/4 text-base md:text-xl text-[#8e7777]'>I turn ideas into impactful designs</span>
+        <span className="w-full md:w-3/4 border-b-2 border-black "></span>
 
       </div>
     </div>
