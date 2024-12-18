@@ -6,7 +6,7 @@ import Square from '../../assets/home/square.png'
 function Section2() {
     return (
         <div className='w-full h-auto flex flex-col px-5 lg:px-10 2xl:px-20 gap-4 my-6 lg:my-10 md:flex-row md:justify-between'>
-            <div className='w-[320px] mx-auto md:mx-0 h-[250px] flex flex-col justify-between p-5 bg-[#F8F8F8] rounded-3xl'>
+            <div className='w-[350px] mx-auto md:mx-0 h-[290px] flex flex-col justify-between p-5 bg-[#F8F8F8] rounded-3xl'>
                 <div className='w-full h-auto flex relative'>
                     <img src="" alt="" className='w-12 h-12 rounded-full bg-gray-300 z-0' />
                     <img src="" alt="" className='w-12 h-12 rounded-full bg-gray-300 absolute left-7 z-10' />
