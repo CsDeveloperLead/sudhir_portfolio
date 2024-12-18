@@ -4,7 +4,6 @@ import Section2 from './HomePageComponents/Section2'
 import Section3 from './HomePageComponents/Section3'
 import BlogSection from './HomePageComponents/BlogSection'
 import ContactSection from './HomePageComponents/ContactSection'
-import Footer from './Footer'
 
 function Homepage() {
   return (
@@ -14,7 +13,6 @@ function Homepage() {
       <Section3 />
       <BlogSection />
       <ContactSection />
-      <Footer />
     </div>
   )
 }
