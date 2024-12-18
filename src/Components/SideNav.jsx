@@ -22,7 +22,7 @@ const SideNavbar = () => {
 
     return (
         location.pathname.includes('/admin-dashboard') && userEmail === 'sudhir@admin.com'
-            ? <div className='w-auto h-auto flex flex-col left-0 top-[69px] absolute md:top-[64px] lg:top-[78px] xl:top-[95px] cursor-pointer'>
+            ? <div className='w-auto h-auto flex flex-col left-0 top-[69px] fixed md:top-[64px] lg:top-[78px] xl:top-[95px] cursor-pointer'>
                 <div onClick={() => setSideNav(true)} className='w-12 p-3 z-20 bg-[#0159A5] text-white rounded-r-md rounded-t-none relative xl:p-5 xl:w-16'>
                     <FaBars className='cursor-pointer' size={25} />
                 </div>
