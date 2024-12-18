@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="w-full md:w-1/2 space-y-6 ">
           {/* Heading */}
           <h1 className="text-4xl md:text-[80px] font-bold w-full  text-center md:text-start">
-            <span className="text-[#3573b0]">Let’s</span> Collaborate!
+            <span className="bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent">Let’s</span> Collaborate!
           </h1>
           <p className="text-gray-700 text-base md:text-2xl text-center md:text-start w-full md:w-[80%] md:leading-10 py-2 md:py-8">
             Tortor porttitor tortor ut vitae commodo et. Et morbi at felis

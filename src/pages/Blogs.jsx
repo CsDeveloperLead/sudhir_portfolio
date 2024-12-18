@@ -37,11 +37,11 @@ const Blogs = () => {
       </div>
     </div>
     <div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-20">
         {cardsData.map((card) => (
           <div
             key={card.id}
-            className="w-[320px] mx-auto h-auto flex flex-col gap-2 xl:w-[350px] bg-gray-100 shadow-md rounded-2xl overflow-hidden p-4 relative"
+            className="w-[320px] mx-auto h-auto flex flex-col gap-2 xl:w-[350px]  overflow-hidden p-4 relative"
           >
             {/* Image Section */}
             <div className="w-full h-auto relative">

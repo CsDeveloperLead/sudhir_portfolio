@@ -1,5 +1,6 @@
 import { HiBars3 } from "react-icons/hi2";
 import {  NavLink } from 'react-router-dom';
+import SideNavbar from "./SideNav";
 
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
         </div>
         <div className='hidden md:flex font-satoshi justify-center items-center gap-14 lg:gap-20 lg:text-lg'>
             <NavLink to='/' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Home</NavLink>
-            <span>Work</span>
+            <NavLink to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Work</NavLink>
             <NavLink to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Events</NavLink>
             <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700' : 'text-black'}`}>Contact</NavLink>
         </div>
@@ -24,6 +25,7 @@ function Header() {
             </div>
             <HiBars3 size={35} className='text-black md:hidden cursor-pointer' />
         </div>
+        <SideNavbar />
     </header>
   )
 }
