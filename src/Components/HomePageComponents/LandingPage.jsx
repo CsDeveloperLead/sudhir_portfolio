@@ -8,8 +8,44 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import Card from '../../assets/home/Card.png'
 import Card2 from '../../assets/home/Card2.png'
 import Marquee from 'react-fast-marquee';
+import { useEffect, useState } from "react";
+
+function UpwardsCarousel({ items }) {
+    const [index, setIndex] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % items.length)
+        }, 2000);
+
+        return () => clearInterval(interval);
+
+    }, [items.length])
+
+    return (
+        <div className="relative w-full h-12 sm:h-16 overflow-hidden xl:h-20">
+            <div className="flex flex-col transition-transform duration-500 scroll-smooth" style={{ transform: `translateY(-${index * 32}%)` }}>
+                {
+                    items.map((item, i) => (
+                        <div key={i} style={{
+                            backgroundImage: 'linear-gradient(90.89deg, #3071AA 8.25%, #787EFF 91.95%)',
+                        }}
+                        className="flex text-transparent  bg-clip-text w-full justify-center sm:h-16 md:justify-start md:items-start xl:h-20 text-black items-center h-12 text-[40px] sm:text-6xl md:text-[40px] lg:text-6xl xl:text-7xl">
+                            {item},
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    )
+}
 
 function LandingPage() {
+    const carousal = [
+        "Mentor",
+        "Coach",
+        "Motivator"
+    ]
     return (
         <>
             <div className='w-full h-auto flex flex-col px-5 my-5 gap-10 md:flex-row-reverse lg:justify-between lg:px-10 2xl:px-20 xl:justify-between xl:gap-28'>
@@ -18,14 +54,11 @@ function LandingPage() {
                         Hi <MdWavingHand size={25} className='text-[#EBBC00] transform -scale-x-100' />, I'm <a href="https://www.linkedin.com/in/sudhir-kumar-chouhan/" className='underline underline-offset-4' target='_blank'>Sudhir Kumar Chouhan</a>
                     </h1>
                     <div className='w-full h-auto text-[40px] sm:text-6xl flex flex-col sm:gap-3 font-satoshi font-bold md:text-[40px] md:gap-0 lg:text-6xl xl:text-7xl'>
-                        <h1 className="text-transparent sm:pb-3 h-auto bg-clip-text"
-                            style={{
-                                backgroundImage: 'linear-gradient(90.89deg, #3071AA 8.25%, #787EFF 91.95%)',
-                            }}>Organiser,</h1>
-                        <h1>Event Planner &</h1>
-                        <h1>Your Partner</h1>
+                        <h1 className="sm:pb-2 h-auto"><UpwardsCarousel items={carousal} /></h1>
+                        <h1>And Your Partner</h1>
+                        <h1>For Change</h1>
                     </div>
-                    <p className='text-[#1B222D] font-satoshi xl:text-lg'>Completed multiple events over the last 15 years</p>
+                    <p className='text-[#1B222D] font-satoshi xl:text-lg'>Have transformed many professionals in span of 20+ years.</p>
                     <div className='w-full h-auto flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center md:flex-col my-3 lg:my-5 lg:flex-row'>
                         <div className='w-auto h-auto flex gap-24 xl:gap-28'>
                             <div className='w-auto h-auto flex relative items-center'>

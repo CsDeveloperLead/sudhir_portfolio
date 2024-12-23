@@ -19,8 +19,7 @@ function Section2() {
             </div>
             <div className='w-[320px] mx-auto md:mx-0 h-[250px] flex flex-col justify-between p-5 font-satoshi lg:w-[400px]'>
                 <img src={Quote} alt="image" className='w-5 mx-auto' />
-                <p className='text-center text-xl lg:text-2xl'>“Get Quick solutions with great quality—a recommendation
-                    that's indeed”</p>
+                <p className='text-center text-xl lg:text-2xl'>“Essential (soft) Skills are core ingredient to succeed in life (Professional & personal)”</p>
                 <div className='w-full h-auto text-center text-sm font-satoshi lg:text-base'>
                     <span className='font-bold'>Sudhir Chouhan.</span>
                     <span className='text-[#00000066]'> Country Collection manager</span>

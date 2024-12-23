@@ -13,13 +13,12 @@ function Section3() {
             </div>
             <div className='w-full h-auto flex flex-col gap-5 sm:w-[50%] md:w-[45%] sm:justify-between lg:py-8'>
                 <div className='w-full h-auto flex flex-col font-bold text-4xl gap-1 font-satoshi lg:text-5xl xl:text-6xl lg:gap-2'>
-                    <h1 className="pb-[2px] bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent">15+ years,</h1>
-                    <h1>driven by trust, love</h1>
-                    <h1>in this career.</h1>
+                    <h1 className="pb-[2px] bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent">20+ years,</h1>
+                    <h1>Seeded with Trust</h1>
+                    <h1>and Confidence.</h1>
                 </div>
                 <div className='w-full h-auto flex flex-col gap-6 lg:text-lg'>
-                    <p>Tortor porttitor tortor ut vitae commodo et. Et morbi at felis vestibulum pulvinar libero ut netus neque. Eget quis condimentum diam et </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, optio?</p>
+                    <p>No one knows you better than you, hence be confident and take charge of your life. You don’t have any shortfall, it’s just an opportunity to excel further.</p>
                 </div>
                 <div className='w-full h-auto flex justify-between items-center'>
                     <Link to='' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
