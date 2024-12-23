@@ -39,7 +39,7 @@ function Section2() {
                     <h1>Ted X</h1>
                     <h1>Cambridge</h1>
                 </div>
-                <div className='w-44 h-32 bg-[#C4C4C4] rounded-3xl absolute right-6 top-8 md:w-36 md:top-12 md:right-2 md:h-24 lg:w-44 lg:h-32 lg:right-6 lg:top-8'></div>
+                <div className='w-44 h-32 bg-[#C4C4C4] rounded-3xl absolute right-6 top-8 md:w-36 md:top-12 md:right-2 md:h-24 lg:w-48 lg:h-32 lg:right-8 lg:top-14'></div>
                 {/* <span className='w-16 h-16 bg-black border-[10px] border-white rounded-2xl absolute -bottom-2.5 -right-2.5'></span> */}
                 <img src={Square} alt="square" className='w-12 h-12 absolute bottom-0 right-0.5' />
             </div>
