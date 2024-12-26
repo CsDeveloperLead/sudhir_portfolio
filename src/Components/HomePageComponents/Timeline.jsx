@@ -4,10 +4,6 @@ import { useRef } from "react";
 const Timeline = () => {
     return (
         <div className="w-full h-auto flex flex-col px-5 my-5 lg:my-10 md:px-10 xl:px-20">
-            <h1 className='text-4xl font-bold font-satoshi lg:text-5xl'>
-                <span className='bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent'>My </span>
-                Timeline!
-            </h1>
             <HorizontalScrollCarousel />
             <div className="w-full h-auto">
                 <p className="w-full h-auto text-lg font-satoshi">
@@ -64,19 +60,23 @@ const HorizontalScrollCarousel = () => {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-85%"]);
 
     return (
         <section ref={targetRef} className="relative h-[300vh]">
-            <div className="sticky top-24 flex my-14 items-center overflow-hidden">
+            <div className="sticky top-24 flex flex-col items-start overflow-hidden">
+                <h1 className='text-4xl font-bold font-satoshi lg:text-5xl'>
+                    <span className='bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent'>Career </span>
+                    Timeline!
+                </h1>
                 <motion.div style={{ x }} className="flex gap-4">
-                    <div className='w-full h-auto flex gap-5 mt-10 overflow-x-hidden relative pb-8' >
+                    <div className='w-full h-auto flex gap-5 mt-10 overflow-x-hidden relative px-8 pb-8' >
                         {/* <div className="bg-gradient-to-r from-blue-500 to-pink-500 rounded-full h-14 min-w-36 absolute top-28 left-10"></div> */}
                         {
                             timelineData.map((item, index) => (
-                                <div key={index} className='h-[350px] border-2 shadow-xl rounded-xl min-w-[800px] p-10 font-satoshi flex flex-col justify-between'>
+                                <div key={index} className='h-auto gap-4 md:gap-8 md:h-[350px] border-2 shadow-xl rounded-xl min-w-[300px] md:min-w-[800px] p-10 font-satoshi flex flex-col'>
                                     <span className='text-3xl font-bold'>{item.year}</span>
-                                    <p className='text-lg'>{item.message}</p>
+                                    <p className='text-sm md:text-lg'>{item.message}</p>
                                 </div>
                             ))
                         }
