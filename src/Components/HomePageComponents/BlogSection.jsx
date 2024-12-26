@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogSection() {
   return (
-    <div className='w-full h-auto flex flex-col px-5 my-5 lg:my-10 md:px-10 xl:px-20'>
+    <div className='w-full h-auto flex flex-col px-5 mb-5 lg:mb-10 md:px-10 xl:px-20'>
         <h1 className='text-4xl font-bold font-satoshi lg:text-5xl'>
             <span className='bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent'>My </span>
             Blogs!

@@ -4,6 +4,8 @@ import Section2 from './HomePageComponents/Section2'
 import Section3 from './HomePageComponents/Section3'
 import BlogSection from './HomePageComponents/BlogSection'
 import ContactSection from './HomePageComponents/ContactSection'
+import Timeline from './HomePageComponents/Timeline'
+
 
 function Homepage() {
   return (
@@ -11,6 +13,7 @@ function Homepage() {
       <LandingPage />
       <Section2 />
       <Section3 />
+      <Timeline />
       <BlogSection />
       <ContactSection />
     </div>
