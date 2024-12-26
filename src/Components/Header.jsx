@@ -21,12 +21,8 @@ function Header() {
                     <NavLink to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Events</NavLink>
                     <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Contact</NavLink>
                 </div>
-                <div className='w-auto h-auto flex gap-4 justify-center items-center'>
-                    <div className='h-11 w-11 flex flex-col justify-center gap-2 items-center border-2 border-black rounded-full'>
-                        <span className='h-[1px] w-7 bg-black'></span>
-                        <span className='h-[1px] w-4 bg-black'></span>
-                        <span className='h-[1px] w-2 bg-black'></span>
-                    </div>
+                <div className='w-auto h-auto flex gap-4 justify-center items-center font-satoshi'>
+                    <NavLink onClick={() => setIsOpen(false)} to='/contact' className='text-center py-2 underline-offset-4 bg-[#3071AA] md:hover:bg-[#3783c5] text-white font-bold px-7 rounded-md'>Get in Touch</NavLink>
                     {
                         isOpen
                             ? <IoClose size={35} className='text-black md:hidden cursor-pointer' onClick={() => setIsOpen(false)} />
@@ -42,6 +38,9 @@ function Header() {
                         <NavLink onClick={() => setIsOpen(false)} to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Work</NavLink>
                         <NavLink onClick={() => setIsOpen(false)} to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Events</NavLink>
                         <NavLink onClick={() => setIsOpen(false)} to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Contact</NavLink>
+                        <div className="w-full h-auto flex justify-center items-center font-satoshi">
+                            <NavLink onClick={() => setIsOpen(false)} to='/contact' className='text-center py-2 underline-offset-4 bg-[#3071AA] text-white font-bold px-7 rounded-md'>Get in Touch</NavLink>
+                        </div>
                     </div>
                 )
             }
