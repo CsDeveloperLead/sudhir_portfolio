@@ -23,14 +23,14 @@ function UpwardsCarousel({ items }) {
     }, [items.length])
 
     return (
-        <div className="relative w-full h-12 sm:h-16 overflow-hidden xl:h-20">
+        <div className="relative w-full h-12 sm:h-16 md:h-12 overflow-hidden lg:h-20">
             <div className="flex flex-col transition-transform duration-500 scroll-smooth" style={{ transform: `translateY(-${index * 32}%)` }}>
                 {
                     items.map((item, i) => (
                         <div key={i} style={{
                             backgroundImage: 'linear-gradient(90.89deg, #3071AA 8.25%, #787EFF 91.95%)',
                         }}
-                        className="flex text-transparent  bg-clip-text w-full justify-center sm:h-16 md:justify-start md:items-start xl:h-20 text-black items-center h-12 text-[40px] sm:text-6xl md:text-[40px] lg:text-6xl xl:text-7xl">
+                        className="flex text-transparent  bg-clip-text w-full sm:h-16 md:h-12 md:justify-start md:items-start lg:h-20 text-black items-center h-12 text-[40px] sm:text-6xl md:text-[40px] lg:text-6xl xl:text-7xl">
                             {item},
                         </div>
                     ))
