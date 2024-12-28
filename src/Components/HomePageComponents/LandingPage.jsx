@@ -9,6 +9,11 @@ import Card from '../../assets/home/Card.png'
 import Card2 from '../../assets/home/Card2.png'
 import Marquee from 'react-fast-marquee';
 import { useEffect, useState } from "react";
+import CompanyImg1 from '../../assets/truwix.jpg'
+import CompanyImg2 from '../../assets/foxsky.webp'
+import CompanyImg3 from '../../assets/campaining.jpeg'
+import CompanyImg4 from '../../assets/teja.png'
+
 
 function UpwardsCarousel({ items }) {
     const [index, setIndex] = useState(0)
@@ -62,12 +67,10 @@ function LandingPage() {
                     <div className='w-full h-auto flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center md:flex-col my-3 lg:my-5 lg:flex-row'>
                         <div className='w-auto h-auto flex gap-24 xl:gap-28'>
                             <div className='w-auto h-auto flex relative items-center'>
-                                <img src="" alt="" className='w-10 h-10 rounded-full bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12' />
-                                <img src="" alt="" className='w-10 h-10 rounded-full left-7 absolute bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-8' />
-                                <img src="" alt="" className='w-10 h-10 rounded-full absolute left-14 bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[60px]' />
-                                <span className='w-10 h-10 rounded-full absolute left-[80px] bg-[#EEA69F] flex justify-center items-center lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[90px]'>
-                                    4.1k
-                                </span>
+                                <img src={CompanyImg4} alt="Logo" className='w-10 h-10 rounded-full bg-white object-contain lg:w-11 border-[1px] lg:h-11 xl:w-12 xl:h-12' />
+                                <img src={CompanyImg2} alt="Logo" className='w-10 h-10 rounded-full object-contain left-7 border-[1px] absolute bg-white lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-8' />
+                                <img src={CompanyImg3} alt="Logo" className='w-10 h-10 rounded-full absolute left-14 bg-white border-[1px] object-contain lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[60px]' />
+                                <img src={CompanyImg1} alt="Logo" className='w-10 h-10 rounded-full absolute left-[80px] bg-white border-[1px] object-contain flex justify-center items-center lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[90px]' />
                             </div>
                             <div className='w-auto h-auto flex flex-col font-satoshi xl:text-lg'>
                                 <span className='font-bold'>200+ Companies</span>
@@ -85,9 +88,9 @@ function LandingPage() {
                     <div className='w-full h-auto flex justify-between items-center gap-3'>
                         <Link to='' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
                         <div className='w-auto h-auto flex gap-3'>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaFacebookF size={25} /></span>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaInstagram size={25} /></span>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaLinkedinIn size={25} /></span>
+                            <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-white duration-300'><FaFacebookF size={25} /></span>
+                            <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-white duration-300'><FaInstagram size={25} /></span>
+                            <Link to='https://www.linkedin.com/in/sudhir-kumar-chouhan/' target='_blank' className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-white duration-300'><FaLinkedinIn size={25} /></Link>
                         </div>
                     </div>
                 </div>

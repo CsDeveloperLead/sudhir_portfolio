@@ -57,6 +57,11 @@ const MyEvents = () => {
             </div>
           </div>
         ))}
+        <div
+          className="flex items-center p-3 md:p-6 bg-gray-100 justify-center rounded-lg shadow-md h-[300px]"
+        >
+          <span className="text-xl font-bold font-satoshi">More Events Coming soon ...</span>
+        </div>
       </div>
     </div>
   );

@@ -14,10 +14,9 @@ function Footer() {
                 </div>
                 <div className='w-full h-[200px] flex flex-col justify-between md:w-[60%] lg:w-[50%] xl:w-[40%]'>
                     <div className='w-auto h-auto flex gap-3 text-white justify-end'>
-                        <span className='p-3 border border-[#00ABAE] rounded-full'><FaInstagram size={25} /></span>
-                        <span className='p-3 border border-[#00ABAE] rounded-full'><FaFacebookF size={25} /></span>
-                        <span className='p-3 border border-[#00ABAE] rounded-full'><FaPinterestP size={25} /></span>
-                        <span className='p-3 border border-[rgb(0,171,174)] rounded-full'><FaLinkedinIn size={25} /></span>
+                        <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaInstagram size={25} /></span>
+                        <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaFacebookF size={25} /></span>
+                        <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaLinkedinIn size={25} /></span>
                     </div>
                     <div className='w-full h-auto grid grid-cols-2 gap-5 sm:grid-cols-3'>
                         <div className='w-auto h-auto flex flex-col text-sm'>
