@@ -17,7 +17,7 @@ function Header() {
                 </div>
                 <div className='hidden md:flex font-satoshi justify-center items-center gap-14 lg:gap-20 lg:text-lg'>
                     <NavLink to='/' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Home</NavLink>
-                    <NavLink to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Work</NavLink>
+                    <NavLink to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Blogs</NavLink>
                     <NavLink to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Events</NavLink>
                     <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Contact</NavLink>
                 </div>
@@ -35,7 +35,7 @@ function Header() {
                 isOpen && (
                     <div className={`${isOpen ? 'translate-y-0' : '-translate-y-full'} duration-500 transition-all ease-in-out w-full h-auto flex flex-col p-3 gap-2 font-satoshi shadow-xl rounded-b-xl`}>
                         <NavLink onClick={() => setIsOpen(false)} to='/' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Home</NavLink>
-                        <NavLink onClick={() => setIsOpen(false)} to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Work</NavLink>
+                        <NavLink onClick={() => setIsOpen(false)} to='/blogs' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Blogs</NavLink>
                         <NavLink onClick={() => setIsOpen(false)} to='/events' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Events</NavLink>
                         <NavLink onClick={() => setIsOpen(false)} to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} text-center py-2 sm:text-lg underline-offset-4`}>Contact</NavLink>
                         <div className="w-full h-auto flex justify-center items-center font-satoshi">

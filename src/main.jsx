@@ -16,6 +16,8 @@ import AdminLogin from "./Components/AdminLogin.jsx";
 import AdminDashboard from "./Components/AdminDashboard.jsx";
 import Blogs2 from "./Components/Blogs2.jsx";
 import CreateBlog from "./Components/CreateBlog.jsx";
+import SingleEvent from "./Components/SingleEvent.jsx";
+import SingleBlog from "./Components/SingleBlog.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,7 +26,9 @@ const router = createBrowserRouter(
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/events/:id" element={<SingleEvent />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/singleblog/:id" element={<SingleBlog />} />
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="admin-dashboard/blogs" element={<Blogs2 />} />

@@ -1,32 +1,9 @@
 import React from "react";
+import { events } from "../EventsData"
+import { NavLink } from "react-router-dom";
 
 const MyEvents = () => {
-  const events = [
-    {
-      id: "01",
-      title: "Business Strategy Development",
-      description:
-        "We collaborate closely with you to design practical, long-term strategies that lead to sustainable business growth.",
-    },
-    {
-      id: "02",
-      title: "Operational Efficiency Improvements",
-      description:
-        "Our expert assessments identify ways to refine processes, cut unnecessary costs, and boost overall productivity.",
-    },
-    {
-      id: "03",
-      title: "Market Research and Insights",
-      description:
-        "We provide detailed industry and competitor insights, allowing you to make well-informed decisions and capitalize on new opportunities.",
-    },
-    {
-      id: "04",
-      title: "Leadership Coaching and Training",
-      description:
-        "We offer programs that help your leadership team build skills and develop approaches that create positive change within your organization.",
-    },
-  ];
+
 
   return (
     <div className="mx-4 md:mx-10 mt-8 md:mt-10">
@@ -45,18 +22,20 @@ const MyEvents = () => {
             className="flex items-center p-3 md:p-6 bg-gray-50 rounded-lg shadow-md h-[300px]"
           >
             {/* Placeholder Image */}
-            <div className="w-1/2 h-full bg-gray-200 rounded-lg"></div>
+            <div className="w-1/2 h-full bg-gray-200 rounded-lg">
+              <img src={event.cardImage} alt="eventImage" className="w-full h-full object-cover rounded-lg" />
+            </div>
 
             {/* Content */}
             <div className="w-1/2 pl-3 md:pl-6 space-y-2 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-base md:text-lg font-bold">{event.title}</h3>
-                <p className="text-gray-600 text-[12px] md:text-sm mt-4">{event.description}</p>
+                <p className="text-gray-600 text-[12px] md:text-sm mt-4">{event.cardDesc}</p>
               </div>
 
               <div className="flex justify-between items-center mt-4">
                 {/* Icon */}
-                <button className="bg-black text-white px-6 py-4 rounded-xl hover:opacity-80">
+                <NavLink to={`/events/${event.id}`} className="bg-black text-white px-6 py-4 rounded-xl hover:opacity-80">
                   <svg
                     width="13"
                     height="13"
@@ -69,7 +48,7 @@ const MyEvents = () => {
                       fill="white"
                     />
                   </svg>
-                </button>
+                </NavLink>
                 {/* Event ID */}
                 <span className="text-[#00ABAE] font-bold text-xl">
                   {event.id}

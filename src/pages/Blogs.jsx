@@ -1,10 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
+const backend = import.meta.env.VITE_BACKEND_URL;
 
 const Blogs = () => {
-  const backend = import.meta.env.VITE_BACKEND_URL;
 
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -37,16 +38,17 @@ const Blogs = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8 my-20">
           {blogs.map((item, index) => (
-            <div
+            <NavLink
+            to={`/singleblog/${item._id}`}
               key={item._id}
-              className="w-[320px] mx-auto h-auto flex flex-col gap-2 xl:w-[350px]  overflow-hidden p-4 relative"
+              className="w-[320px] mx-auto h-auto flex flex-col gap-2 xl:w-[400px] shadow-md duration-500 ease-in-out hover:shadow-xl rounded-md overflow-hidden p-4 relative"
             >
               <img
                 src={item.image}
                 alt="Blog Image"
-                className="bg-gray-400 h-[200px] xl:h-[250px] object-cover rounded-2xl"
+                className="bg-gray-400 h-auto object-contain rounded-2xl"
               />
               {/* Image Section */}
               <div className="w-full h-auto relative">
@@ -67,14 +69,13 @@ const Blogs = () => {
                     hour: "2-digit",
                     minute: "2-digit",
                     second: "2-digit",
-                    hour12: false,
+                    hour12: true,
                   }).format(new Date(item.createdAt))}
                 </p>{" "}
-                <p className="text-[#8E7777] text-sm leading-relaxed">
-                  {item.content}
+                <p dangerouslySetInnerHTML={{ __html: item.content.slice(0, 150) + "...." }} className="text-[#8E7777] text-sm leading-relaxed">
                 </p>
               </div>
-            </div>
+            </NavLink>
           ))}
         </div>
       </div>
