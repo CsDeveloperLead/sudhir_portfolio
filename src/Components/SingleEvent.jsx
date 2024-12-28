@@ -8,6 +8,7 @@ function SingleEvent() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const event = events.find((event) => event.id === id)
         if (event) {
             setSingleEvent(event)

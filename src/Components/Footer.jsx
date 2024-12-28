@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6"
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -16,7 +16,7 @@ function Footer() {
                     <div className='w-auto h-auto flex gap-3 text-white justify-end'>
                         <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaInstagram size={25} /></span>
                         <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaFacebookF size={25} /></span>
-                        <span className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaLinkedinIn size={25} /></span>
+                        <Link to='https://www.linkedin.com/in/sudhir-kumar-chouhan/' target='_blank' className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black duration-500'><FaLinkedinIn size={25} /></Link>
                     </div>
                     <div className='w-full h-auto grid grid-cols-2 gap-5 sm:grid-cols-3'>
                         <div className='w-auto h-auto flex flex-col text-sm'>
@@ -37,8 +37,8 @@ function Footer() {
             <div className='w-[95%] h-[1px] bg-gray-400 mx-auto my-5 lg:my-10'></div>
             <div className='w-full h-auto flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:mb-5'>
                 <div className='w-full h-auto flex flex-col gap-5 justify-center md:flex-row items-center text-white font-satoshi md:justify-between'>
-                    <span>About us</span>
-                    <span>Contact us</span>
+                    <Link to='/'>About us</Link>
+                    <Link to='/contact'>Contact us</Link>
                     <span>Help</span>
                     <span>Privacy Policy</span>
                     <span>Disclaimer</span>

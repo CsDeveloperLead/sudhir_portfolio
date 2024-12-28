@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   return (
     <div className="mx-4 md:mx-10 mt-8 md:mt-14 font-satoshi flex flex-col gap-4 md:gap-10">
       <div className="w-full flex md:h-[105px]">
