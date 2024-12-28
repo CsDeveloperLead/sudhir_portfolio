@@ -6,6 +6,7 @@ import BlogSection from './HomePageComponents/BlogSection'
 import ContactSection from './HomePageComponents/ContactSection'
 import Timeline from './HomePageComponents/Timeline'
 import Carousel from './Carousel'
+import EventsSection from './HomePageComponents/EventsSection'
 
 function Homepage() {
   const slides = [
@@ -31,6 +32,7 @@ function Homepage() {
       <Section2 />
       <Section3 />
       <Timeline />
+      <EventsSection />
       <BlogSection />
       <div className=" h-[450px] mx-1 md:mx-0 md:min-h-screen bg-[#fff] flex items-center justify-center">
         <Carousel slides={slides} />
