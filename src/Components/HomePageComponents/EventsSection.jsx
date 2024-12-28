@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function EventsSection() {
   return (
-    <div className='w-full h-auto flex flex-col px-5 my-10 md:flex-row-reverse md:justify-between lg:mb-20 md:px-10 xl:px-20'>
+    <div className='w-full h-auto flex flex-col px-5 my-10 md:flex-row-reverse md:justify-between  lg:mb-20 md:px-10 xl:px-20'>
         <div className='w-full h-auto relative sm:w-[70%] mx-auto md:w-[45%] lg:w-[40%]'>
             <img src="" alt="" className='w-full mx-auto h-[200px] sm:h-[250px] lg:h-[300px] xl:h-[350px] rounded-xl bg-gray-500' />
             <img src={Card4} alt="Card image" className='absolute -bottom-8 -right-4 h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 xl:h-52 xl:w-52 xl:-bottom-16 xl:-right-14 sm:-bottom-10 sm:-right-8' />
