@@ -78,6 +78,11 @@ const Blogs = () => {
               </div>
             </NavLink>
           ))}
+          <div
+              className="w-[320px] mx-auto h-auto justify-center items-center flex gap-2 bg-gray-50 xl:w-[400px] shadow-md rounded-md overflow-hidden p-4 relative"
+            >
+            <p className="font-satoshi font-semibold">More Blogs Coming Soon ...</p>
+            </div>
         </div>
       </div>
     </div>
