@@ -1,5 +1,5 @@
 import React from 'react'
-import Card4 from '../../assets/home/Card4.png'
+import Card4 from '../../assets/home/Card4.webp'
 import { Link } from 'react-router-dom'
 import { events } from "../../EventsData"
 

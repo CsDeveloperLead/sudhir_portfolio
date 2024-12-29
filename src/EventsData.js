@@ -1,9 +1,9 @@
-import Event1 from './assets/events/event1.jpeg'
-import Event1img1 from './assets/events/event1img2.jpeg'
-import Event1img2 from './assets/events/event1img3.jpeg'
-import Event1img3 from './assets/events/event1img4.jpeg'
-import Event1img4 from './assets/events/event1img5.jpeg'
-import Event1img5 from './assets/events/event1img6.jpeg'
+import Event1 from './assets/events/event1.webp'
+import Event1img1 from './assets/events/event1img2.webp'
+import Event1img2 from './assets/events/event1img3.webp'
+import Event1img3 from './assets/events/event1img4.webp'
+import Event1img4 from './assets/events/event1img5.webp'
+import Event1img5 from './assets/events/event1img6.webp'
 
 
 export const events = [

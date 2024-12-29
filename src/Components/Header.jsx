@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import SideNavbar from "./SideNav";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { div } from "framer-motion/m";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react'
-import Card3 from '../../assets/home/Card3.png'
-import ProfilePic from '../../assets/home/profileImage.png'
-import Sign from '../../assets/home/Signature.png'
+import Card3 from '../../assets/home/Card3.webp'
+import ProfilePic from '../../assets/home/profileImage.webp'
+import Sign from '../../assets/home/Signature.webp'
 import { Link } from 'react-router-dom'
 
 function Section3() {

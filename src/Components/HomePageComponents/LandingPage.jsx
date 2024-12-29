@@ -3,15 +3,15 @@ import { MdWavingHand } from "react-icons/md";
 import { MdThumbUp } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn } from "react-icons/fa6";
-import Card from '../../assets/home/Card.png'
-import Card2 from '../../assets/home/Card2.png'
+import Card from '../../assets/home/Card.webp'
+import Card2 from '../../assets/home/Card2.webp'
 import Marquee from 'react-fast-marquee';
 import { useEffect, useState } from "react";
-import CompanyImg1 from '../../assets/hp1.jpeg'
-import CompanyImg2 from '../../assets/pana.jpeg'
-import CompanyImg3 from '../../assets/hewlet.jpeg'
-import CompanyImg4 from '../../assets/cgc.jpeg'
-import ProfilePic from '../../assets/home/6.png'
+import CompanyImg1 from '../../assets/hp1.webp'
+import CompanyImg2 from '../../assets/pana.webp'
+import CompanyImg3 from '../../assets/hewlet.webp'
+import CompanyImg4 from '../../assets/cgc.webp'
+import ProfilePic from '../../assets/home/6.webp'
 
 
 function UpwardsCarousel({ items }) {
