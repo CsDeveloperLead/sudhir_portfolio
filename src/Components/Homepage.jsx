@@ -34,9 +34,9 @@ function Homepage() {
       <Timeline />
       <EventsSection />
       <BlogSection />
-      <div className=" h-[450px] mx-1 md:mx-0 md:min-h-screen bg-[#fff] flex items-center justify-center">
+      {/* <div className=" h-[450px] mx-1 md:mx-0 md:min-h-screen bg-[#fff] flex items-center justify-center">
         <Carousel slides={slides} />
-      </div>
+      </div> */}
       <ContactSection />
     </div>
   )

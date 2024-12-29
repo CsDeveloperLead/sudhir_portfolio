@@ -27,7 +27,7 @@ function BlogSection() {
                 <span className='bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent'>My </span>
                 Blogs!
             </h1>
-            <p className='text-[#8E7777] my-2'>I turn ideas into impactful designs</p>
+            <p className='text-[#8E7777] my-2'>Where Ideas Take Flight and Knowledge Ignites.</p>
             <div className='w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 mt-5'>
                 {blogs.map((item, index) => (
                     <NavLink

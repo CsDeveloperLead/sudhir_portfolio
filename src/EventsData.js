@@ -11,7 +11,7 @@ export const events = [
     id: "01",
     cardImage: Event1,
     title: "Empowering Entrepreneurs at CGC Jhanjeri",
-    sliderImg: [Event1img1, Event1img2, Event1img3, Event1img4, Event1img5],
+    sliderImg: [Event1img5, Event1img2, Event1img3, Event1img4, Event1img1],
     cardDesc: "Venture Vault Season 1 was more than just an event; it was a celebration of innovation and determination.",
     description:
       `

@@ -23,6 +23,7 @@ const Blogs = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchBlogs();
   }, []);
 
@@ -32,7 +33,7 @@ const Blogs = () => {
         <h1 className="font-semibold text-3xl md:text-[95px]">My Blogs</h1>
         <div className="w-full flex flex-col md:flex-row gap-2">
           <span className="w-full md:w-1/4 text-base md:text-xl text-[#8e7777]">
-            I turn ideas into impactful designs
+            Where Ideas Take Flight and Knowledge Ignites.
           </span>
           <span className="w-full md:w-3/4 border-b-2 border-black "></span>
         </div>
@@ -41,7 +42,7 @@ const Blogs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8 my-20">
           {blogs.map((item, index) => (
             <NavLink
-            to={`/singleblog/${item._id}`}
+              to={`/singleblog/${item._id}`}
               key={item._id}
               className="w-[320px] mx-auto h-auto flex flex-col gap-2 xl:w-[400px] shadow-md duration-500 ease-in-out hover:shadow-xl rounded-md overflow-hidden p-4 relative"
             >

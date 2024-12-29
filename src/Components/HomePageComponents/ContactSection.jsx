@@ -3,6 +3,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function ContactSection() {
     return (
@@ -14,14 +15,11 @@ function ContactSection() {
                         Collaborate!
                     </h1>
                     <p className='font-satoshi text-sm mt-7 lg:pr-10'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque, temporibus officia quidem eos quia! Dolor aut laborum, beatae eligendi, fugit repudiandae magni iusto voluptatibus quidem exercitationem, quasi autem odit.
+                        Believe in yourself and take charge of your journey. Together, we’ll transform challenges into opportunities and unlock your true potential.
                     </p>
                 </div>
                 <div className='w-auto h-auto flex gap-3'>
-                    <span className='p-3 border border-[#00ABAE] rounded-full'><FaInstagram size={25} /></span>
-                    <span className='p-3 border border-[#00ABAE] rounded-full'><FaFacebookF size={25} /></span>
-                    <span className='p-3 border border-[#00ABAE] rounded-full'><FaPinterestP size={25} /></span>
-                    <span className='p-3 border border-[#00ABAE] rounded-full'><FaLinkedinIn size={25} /></span>
+                    <Link to='https://www.linkedin.com/in/sudhir-kumar-chouhan/' target='_blank' className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-black md:hover:text-white duration-500'><FaLinkedinIn size={25} /></Link>
                 </div>
             </div>
             <div className='w-full h-auto flex flex-col gap-6'>
@@ -42,7 +40,7 @@ function ContactSection() {
                     </div>
                 </div>
                 <div className='w-full h-auto'>
-                    <button className='px-8 py-2 text-white bg-black rounded-xl'>Send Message</button>
+                    <button className='px-8 py-2 text-white bg-black rounded-xl md:hover:bg-slate-800'>Send Message</button>
                 </div>
             </div>
         </div>

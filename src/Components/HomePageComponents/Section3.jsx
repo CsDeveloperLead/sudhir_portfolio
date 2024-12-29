@@ -21,7 +21,7 @@ function Section3() {
                     <p>No one knows you better than you, hence be confident and take charge of your life. You don’t have any shortfall, it’s just an opportunity to excel further.</p>
                 </div>
                 <div className='w-full h-auto flex justify-between items-center'>
-                    <Link to='' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
+                    <Link to='/contact' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
                     <img src={Sign} alt="signature" className='w-32' />
                 </div>
             </div>
