@@ -9,14 +9,14 @@ const Contact = () => {
   return (
     <div className="mx-4 md:mx-10 mt-8 md:mt-14 font-satoshi flex flex-col gap-4 md:gap-10">
       <div className="w-full flex md:h-[105px]">
-        <h1 className="w-[55%] md:w-[35%] font-semibold text-3xl md:text-[95px]">Contact Us</h1>
-        <span className="w-[45%] md:w-[65%] border-b-2 border-black md:mt-10"></span>
+        <h1 className="w-[55%] md:w-[35%] font-semibold text-3xl md:text-7xl lg:text-[95px]">Contact Us</h1>
+        <span className="w-[45%] md:w-[65%] border-b-2 border-black md:mt-20"></span>
       </div>
       <div className="flex flex-wrap justify-between items-center my-6 md:my-20 ">
         {/* Left Section */}
-        <div className="w-full md:w-1/2 space-y-6 ">
+        <div className="w-full lg:w-1/2 space-y-6 ">
           {/* Heading */}
-          <h1 className="text-4xl md:text-[80px] font-bold w-full  text-center md:text-start">
+          <h1 className="text-4xl md:text-[80px] lg:text-6xl xl:text-7xl font-bold w-full  text-center md:text-start">
             <span className="bg-gradient-to-r from-[#3071AA] to-[#787EFF] bg-clip-text text-transparent">Let’s</span> Collaborate!
           </h1>
           <p className="text-gray-700 text-base md:text-2xl text-center md:text-start w-full md:w-[80%] md:leading-10 py-2 md:py-8">
@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 mt-8">
+        <div className="w-full lg:w-1/2 mt-8">
           <form className="space-y-8">
             {/* Name and Email */}
             <div className="flex flex-col md:flex-row md:space-x-4">
