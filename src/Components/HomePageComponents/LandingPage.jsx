@@ -72,7 +72,7 @@ function LandingPage() {
                                 <img src={CompanyImg4} alt="Logo" className='w-10 h-10 rounded-full absolute left-[80px] bg-white border-[1px] object-cover flex justify-center items-center lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[90px]' />
                             </div>
                             <div className='w-auto h-auto flex flex-col font-satoshi xl:text-lg'>
-                                <span className='font-bold'>200+ Companies</span>
+                                <span className='font-bold'>Companies</span>
                                 <span className='text-sm'>Trusted Mentors</span>
                             </div>
                         </div>
