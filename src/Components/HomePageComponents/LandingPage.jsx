@@ -11,6 +11,7 @@ import CompanyImg1 from '../../assets/hp1.jpeg'
 import CompanyImg2 from '../../assets/pana.jpeg'
 import CompanyImg3 from '../../assets/hewlet.jpeg'
 import CompanyImg4 from '../../assets/cgc.jpeg'
+import ProfilePic from '../../assets/home/6.png'
 
 
 function UpwardsCarousel({ items }) {
@@ -91,7 +92,7 @@ function LandingPage() {
                     </div>
                 </div>
                 <div className='w-full h-auto relative md:w-[50%] lg:w-[40%]'>
-                    <img src="" alt="" className='w-full h-[440px] bg-gray-200 rounded-3xl lg:h-[500px] xl:h-[550px]' />
+                    <img src={ProfilePic} alt="profile image" className='w-full h-[440px] object-cover bg-gray-200 rounded-3xl lg:h-[500px] xl:h-[550px]' />
                     <img src={Card} alt="card image" className='absolute object-cover -top-7 -left-4 h-48 w-40 xl:w-60 xl:h-64 xl:-left-10 xl:-top-10' />
                     <img src={Card2} alt="card image" className='absolute object-cover bottom-6 h-14 w-40 -right-5 md:-right-8 xl:h-24 xl:w-60 xl:-right-14' />
                 </div>
