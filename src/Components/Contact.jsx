@@ -1,7 +1,30 @@
-import React, { useEffect } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+
+
 const Contact = () => {
+  const [details, setDetails] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+  
+
+  async function sendEmail() {
+    try {
+      const response = await axios.post(`${backend}/api/v1/admin/contact-admin`, details)
+
+      if (response.data.status === 200) {
+        alert("Message Sent successfully !!")
+      }
+
+    } catch (error) {
+      console.log("Error while sending email to admin :", error);
+    }
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [])
@@ -74,7 +97,7 @@ const Contact = () => {
 
         {/* Right Section */}
         <div className="w-full lg:w-1/2 mt-8">
-          <form className="space-y-8">
+          <form className="space-y-8" onSubmit={sendEmail}>
             {/* Name and Email */}
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="w-full">
@@ -84,6 +107,8 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  value={details.name}
+                  onChange={(e) => setDetails({ ...details, name: e.target.value })}
                   placeholder="Your full name"
                   className="w-full p-4 bg-[#e7e7e7] rounded-2xl focus:outline-none"
                 />
@@ -95,6 +120,8 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  value={details.email}
+                  onChange={(e) => setDetails({ ...details, email: e.target.value })}
                   placeholder="Where I can reach you"
                   className="w-full p-4 bg-[#e7e7e7] rounded-2xl focus:outline-none"
                 />
@@ -109,6 +136,8 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows="10"
+                value={details.message}
+                onChange={(e) => setDetails({ ...details, message: e.target.value })}
                 placeholder="Tell me about your project or ask any questions"
                 className="w-full p-3 bg-[#e7e7e7] rounded-2xl focus:outline-none"
               ></textarea>
