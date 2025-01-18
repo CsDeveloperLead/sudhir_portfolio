@@ -393,7 +393,7 @@ const Timeline = () => {
       {/* desktop */}
       <div className="w-full h-screen relative font-satoshi hidden lg:block ">
         <div className="absolute top-6 left-10 flex flex-col gap-2">
-          <h1 className="text-[80px] font-bold text-[#3071aa]">My Timeline</h1>
+          <h1 className="text-[80px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#3071aa] to-[#5878d9]">My Timeline</h1>
           <p className="text-2xl text-gray-400">
             I turn ideas into impactful designs
           </p>
@@ -541,7 +541,7 @@ const Timeline = () => {
       {/* tablet */}
       <div className="w-full h-auto md:flex lg:hidden flex-col gap-16 justify-center items-center hidden">
       <div className="flex flex-col gap-4">
-          <h1 className="text-6xl text-center font-bold text-[#3071aa]">My Timeline</h1>
+          <h1 className="text-6xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#3071aa] to-[#5878d9]">My Timeline</h1>
           <p className="text-2xl text-gray-400">
             I turn ideas into impactful designs
           </p>
@@ -694,7 +694,7 @@ const Timeline = () => {
       {/* mobile */}
       <div className="w-full h-auto flex flex-col gap-16 justify-center items-center sm:hidden">
       <div className="flex flex-col gap-4">
-          <h1 className="text-5xl text-center font-bold text-[#3071aa]">My Timeline</h1>
+          <h1 className="text-5xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#3071aa] to-[#5878d9]">My Timeline</h1>
           <p className="text-xl text-gray-400">
             I turn ideas into impactful designs
           </p>
