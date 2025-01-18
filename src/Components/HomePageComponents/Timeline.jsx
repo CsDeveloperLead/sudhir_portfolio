@@ -619,7 +619,7 @@ const Timeline = () => {
           )}
         </div>
         </div>
-        <div className="flex justify-between gap-10">
+        <div className="flex justify-between gap-20">
         <div className="" onClick={() => togglePopup(setShowPopup3)}>
           <img src={ti} alt="" className="w-[280px]" />
           <h1 className="text-5xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#474a4d] to-[#3071a9]">
