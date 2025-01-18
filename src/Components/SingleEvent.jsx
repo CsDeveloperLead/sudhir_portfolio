@@ -8,6 +8,7 @@ function SingleEvent() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const event = events.find((event) => event.id === id)
         if (event) {
             setSingleEvent(event)
@@ -32,7 +33,7 @@ function SingleEvent() {
     return (
         <div className='w-full h-auto flex flex-col px-5 my-10 md:px-10 xl:px-20'>
             {/* Image Slider */}
-            <div className='w-full h-auto rounded-xl flex relative overflow-hidden sm:h-[500px] lg:h-[500px] border-2'>
+            <div className='w-full h-[200px] rounded-xl flex relative overflow-hidden sm:h-[500px] lg:h-[500px] border-2'>
                 {/* Images */}
                 {singleEvent?.sliderImg?.map((image, index) => (
                     <img

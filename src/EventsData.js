@@ -1,9 +1,9 @@
-import Event1 from './assets/events/event1.jpeg'
-import Event1img1 from './assets/events/event1img2.jpeg'
-import Event1img2 from './assets/events/event1img3.jpeg'
-import Event1img3 from './assets/events/event1img4.jpeg'
-import Event1img4 from './assets/events/event1img5.jpeg'
-import Event1img5 from './assets/events/event1img6.jpeg'
+import Event1 from './assets/events/event1.webp'
+import Event1img1 from './assets/events/event1img2.webp'
+import Event1img2 from './assets/events/event1img3.webp'
+import Event1img3 from './assets/events/event1img4.webp'
+import Event1img4 from './assets/events/event1img5.webp'
+import Event1img5 from './assets/events/event1img6.webp'
 
 
 export const events = [
@@ -11,7 +11,7 @@ export const events = [
     id: "01",
     cardImage: Event1,
     title: "Empowering Entrepreneurs at CGC Jhanjeri",
-    sliderImg: [Event1img1, Event1img2, Event1img3, Event1img4, Event1img5],
+    sliderImg: [Event1img5, Event1img2, Event1img3, Event1img4, Event1img1],
     cardDesc: "Venture Vault Season 1 was more than just an event; it was a celebration of innovation and determination.",
     description:
       `

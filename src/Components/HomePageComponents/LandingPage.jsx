@@ -2,13 +2,17 @@ import React from 'react'
 import { MdWavingHand } from "react-icons/md";
 import { MdThumbUp } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
-import Card from '../../assets/home/Card.png'
-import Card2 from '../../assets/home/Card2.png'
+import Card from '../../assets/home/Card.webp'
+import Card2 from '../../assets/home/Card2.webp'
 import Marquee from 'react-fast-marquee';
 import { useEffect, useState } from "react";
+import CompanyImg1 from '../../assets/hp1.webp'
+import CompanyImg2 from '../../assets/pana.webp'
+import CompanyImg3 from '../../assets/hewlet.webp'
+import CompanyImg4 from '../../assets/cgc.webp'
+import ProfilePic from '../../assets/home/6.webp'
+
 
 function UpwardsCarousel({ items }) {
     const [index, setIndex] = useState(0)
@@ -30,7 +34,7 @@ function UpwardsCarousel({ items }) {
                         <div key={i} style={{
                             backgroundImage: 'linear-gradient(90.89deg, #3071AA 8.25%, #787EFF 91.95%)',
                         }}
-                        className="flex text-transparent  bg-clip-text w-full sm:h-16 md:h-12 md:justify-start md:items-start lg:h-20 text-black items-center h-12 text-[40px] sm:text-6xl md:text-[40px] lg:text-6xl xl:text-7xl">
+                            className="flex text-transparent  bg-clip-text w-full sm:h-16 md:h-12 md:justify-start md:items-start lg:h-20 text-black items-center h-12 text-[40px] sm:text-6xl md:text-[40px] lg:text-6xl xl:text-7xl">
                             {item},
                         </div>
                     ))
@@ -62,37 +66,33 @@ function LandingPage() {
                     <div className='w-full h-auto flex flex-col gap-6 sm:flex-row sm:justify-between sm:items-center md:flex-col my-3 lg:my-5 lg:flex-row'>
                         <div className='w-auto h-auto flex gap-24 xl:gap-28'>
                             <div className='w-auto h-auto flex relative items-center'>
-                                <img src="" alt="" className='w-10 h-10 rounded-full bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12' />
-                                <img src="" alt="" className='w-10 h-10 rounded-full left-7 absolute bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-8' />
-                                <img src="" alt="" className='w-10 h-10 rounded-full absolute left-14 bg-gray-500 lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[60px]' />
-                                <span className='w-10 h-10 rounded-full absolute left-[80px] bg-[#EEA69F] flex justify-center items-center lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[90px]'>
-                                    4.1k
-                                </span>
+                                <img src={CompanyImg3} alt="Logo" className='w-10 h-10 rounded-full bg-white object-cover lg:w-11 border-[1px] lg:h-11 xl:w-12 xl:h-12' />
+                                <img src={CompanyImg2} alt="Logo" className='w-10 h-10 rounded-full object-contain left-7 border-[1px] absolute bg-white lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-8' />
+                                <img src={CompanyImg1} alt="Logo" className='w-10 h-10 rounded-full absolute left-14 bg-white border-[1px] object-cover lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[60px]' />
+                                <img src={CompanyImg4} alt="Logo" className='w-10 h-10 rounded-full absolute left-[80px] bg-white border-[1px] object-cover flex justify-center items-center lg:w-11 lg:h-11 xl:w-12 xl:h-12 xl:left-[90px]' />
                             </div>
                             <div className='w-auto h-auto flex flex-col font-satoshi xl:text-lg'>
-                                <span className='font-bold'>200+ Companies</span>
-                                <span className='text-sm'>trust Cotamoni</span>
+                                <span className='font-bold'>Companies</span>
+                                <span className='text-sm'>Trusted Mentors</span>
                             </div>
                         </div>
                         <div className='w-auto h-auto flex gap-4 items-center xl:gap-6 xl:text-lg'>
                             <MdThumbUp size={35} className='text-[#EBBC00] xl:size-10' />
                             <div className='w-auto h-auto flex flex-col font-satoshi'>
-                                <span className='font-bold'>The Best Consultant</span>
-                                <span className='text-sm'>with highest ratings</span>
+                                <span className='font-bold'>The Best Mentor</span>
+                                <span className='text-sm'>with Experiential learning</span>
                             </div>
                         </div>
                     </div>
                     <div className='w-full h-auto flex justify-between items-center gap-3'>
-                        <Link to='' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
+                        <Link to='/contact' className='w-32 text-center rounded-2xl font-satoshi text-white bg-[#3071AA] py-2 md:hover:bg-[#428ac9] xl:py-3 xl:w-36'>Let's Talk</Link>
                         <div className='w-auto h-auto flex gap-3'>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaFacebookF size={25} /></span>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaInstagram size={25} /></span>
-                            <span className='p-3 border border-[#00ABAE] rounded-full'><FaLinkedinIn size={25} /></span>
+                            <Link to='https://www.linkedin.com/in/sudhir-kumar-chouhan/' target='_blank' className='p-3 border border-[#00ABAE] rounded-full md:hover:bg-[#00ABAE] md:hover:text-white duration-300'><FaLinkedinIn size={25} /></Link>
                         </div>
                     </div>
                 </div>
                 <div className='w-full h-auto relative md:w-[50%] lg:w-[40%]'>
-                    <img src="" alt="" className='w-full h-[440px] bg-gray-200 rounded-3xl lg:h-[500px] xl:h-[550px]' />
+                    <img src={ProfilePic} alt="profile image" className='w-full h-[440px] object-cover bg-gray-200 rounded-3xl lg:h-[500px] xl:h-[550px]' />
                     <img src={Card} alt="card image" className='absolute object-cover -top-7 -left-4 h-48 w-40 xl:w-60 xl:h-64 xl:-left-10 xl:-top-10' />
                     <img src={Card2} alt="card image" className='absolute object-cover bottom-6 h-14 w-40 -right-5 md:-right-8 xl:h-24 xl:w-60 xl:-right-14' />
                 </div>
@@ -105,7 +105,11 @@ function LandingPage() {
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Coach</span>
+                    </div>
+                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
+                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
+                        <span className=''>Motivator</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
@@ -113,7 +117,11 @@ function LandingPage() {
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Coach</span>
+                    </div>
+                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
+                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
+                        <span className=''>Motivator</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
@@ -121,7 +129,11 @@ function LandingPage() {
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Coach</span>
+                    </div>
+                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
+                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
+                        <span className=''>Motivator</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
@@ -129,7 +141,11 @@ function LandingPage() {
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Coach</span>
+                    </div>
+                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
+                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
+                        <span className=''>Motivator</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
@@ -137,27 +153,11 @@ function LandingPage() {
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Coach</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
-                    </div>
-                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
-                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
-                    </div>
-                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
-                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
-                    </div>
-                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
-                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
-                    </div>
-                    <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
-                        <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>
-                        <span className=''>Mentor</span>
+                        <span className=''>Motivator</span>
                     </div>
                     <div className='w-auto h-auto flex justify-center items-center gap-2 ml-3 lg:ml-8'>
                         <span className='h-3 w-3 bg-[#3071AA] rounded-full'></span>

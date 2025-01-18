@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import SideNavbar from "./SideNav";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-// import { div } from "framer-motion/m";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ function Header() {
                     <NavLink to='/contact' className={({ isActive }) => `${isActive ? 'text-blue-700 underline' : 'text-black'} underline-offset-4`}>Contact</NavLink>
                 </div>
                 <div className='w-auto h-auto flex gap-4 justify-center items-center font-satoshi'>
-                    <NavLink onClick={() => setIsOpen(false)} to='/contact' className='text-center py-2 underline-offset-4 bg-[#3071AA] md:hover:bg-[#3783c5] text-white font-bold px-7 rounded-md'>Get in Touch</NavLink>
+                    <NavLink onClick={() => setIsOpen(false)} to='/contact' className='hidden md:block text-center py-2 underline-offset-4 bg-[#3071AA] md:hover:bg-[#3783c5] text-white font-bold px-7 rounded-md'>Get in Touch</NavLink>
                     {
                         isOpen
                             ? <IoClose size={35} className='text-black md:hidden cursor-pointer' onClick={() => setIsOpen(false)} />

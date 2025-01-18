@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { events } from "../EventsData"
 import { NavLink } from "react-router-dom";
 
+
 const MyEvents = () => {
-
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="mx-4 md:mx-10 mt-8 md:mt-10">
       <div className="w-full flex md:h-[105px]">
@@ -17,9 +19,9 @@ const MyEvents = () => {
       {/* Event Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 md:my-20">
         {events.map((event) => (
-          <div
+          <NavLink to={`/events/${event.id}`}
             key={event.id}
-            className="flex items-center p-3 md:p-6 bg-gray-50 rounded-lg shadow-md h-[300px]"
+            className="flex items-center p-3 hover:shadow-xl duration-500 ease-in-out md:p-6 bg-gray-50 rounded-lg shadow-md h-[300px]"
           >
             {/* Placeholder Image */}
             <div className="w-1/2 h-full bg-gray-200 rounded-lg">
@@ -35,7 +37,7 @@ const MyEvents = () => {
 
               <div className="flex justify-between items-center mt-4">
                 {/* Icon */}
-                <NavLink to={`/events/${event.id}`} className="bg-black text-white px-6 py-4 rounded-xl hover:opacity-80">
+                <div className="bg-black text-white px-6 py-4 rounded-xl">
                   <svg
                     width="13"
                     height="13"
@@ -48,15 +50,20 @@ const MyEvents = () => {
                       fill="white"
                     />
                   </svg>
-                </NavLink>
+                </div>
                 {/* Event ID */}
                 <span className="text-[#00ABAE] font-bold text-xl">
                   {event.id}
                 </span>
               </div>
             </div>
-          </div>
+          </NavLink>
         ))}
+        <div
+          className="flex items-center p-3 md:p-6 bg-gray-100 justify-center rounded-lg shadow-md h-[300px]"
+        >
+          <span className="text-xl font-bold font-satoshi">More Events Coming soon ...</span>
+        </div>
       </div>
     </div>
   );
