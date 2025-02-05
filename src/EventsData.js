@@ -1,10 +1,10 @@
 import Event1 from './assets/events/event1.webp'
-import Event1img1 from './assets/events/event1img2.webp'
+import Event1img1 from './assets/events/event1img2.webp';
 import Event1img2 from './assets/events/event1img3.webp'
 import Event1img3 from './assets/events/event1img4.webp'
 import Event1img4 from './assets/events/event1img5.webp'
 import Event1img5 from './assets/events/event1img6.webp'
-
+import Event2img1 from './assets/events/event2.jpg'
 
 export const events = [
   {
@@ -60,13 +60,89 @@ To the startups I met, I urge you to stay resilient, keep learning, and never lo
 In conclusion, Venture Vault Season 1 was more than just an event; it was a celebration of innovation and determination. I am grateful to have been a part of this transformative experience and look forward to seeing the ripple effects of this initiative on the entrepreneurial landscape of India.
 `,
   },
-  // {
-  //   id: "02",
-  //   img: Event1,
-  //   title: "Operational Efficiency Improvements",
-  //   description:
-  //     "Our expert assessments identify ways to refine processes, cut unnecessary costs, and boost overall productivity.",
-  // },
+  {
+    id: "02",
+    cardImage:Event2img1,
+    title: "Judging at Blueprint – IIT Delhi’s Premier Business Plan Competition",
+    sliderImg: [Event2img1, Event2img1, Event2img1, Event2img1, Event2img1],
+    cardDesc: "Blueprint provided a front-row seat to groundbreaking innovation and entrepreneurial excellence.",
+    description:
+      `
+Serving as a judge at *Blueprint—IIT Delhi’s flagship business plan competition*—was an incredible honor and a truly enriching experience. This prestigious platform brought together the brightest entrepreneurial minds, all eager to disrupt industries with innovative solutions.
+
+<strong> A Front-Row Seat to Disruptive Innovation </strong>
+
+Blueprint showcased a diverse range of startups tackling real-world problems with cutting-edge solutions. As a judge, I had the opportunity to analyze and assess business models spanning multiple industries, including:
+
+✔ **Technology & AI** – Innovative applications of artificial intelligence and machine learning to optimize business operations and enhance user experiences.
+✔ **Healthcare & Biotechnology** – Startups leveraging scientific advancements to revolutionize patient care, diagnostics, and medical accessibility.
+✔ **Sustainability & GreenTech** – Ventures dedicated to solving environmental challenges through renewable energy, circular economy solutions, and eco-friendly products.
+✔ **FinTech & Blockchain** – Emerging financial technologies designed to improve banking, investment, and transaction security.
+✔ **EdTech & Social Impact** – Transformative solutions aiming to democratize education and create meaningful societal change.
+
+Each startup brought a unique approach to problem-solving, blending creativity with technical expertise to develop scalable, high-impact solutions.
+
+<strong> Understanding the Pulse of Industry Trends </strong>
+
+Beyond assessing individual startups, Blueprint provided an opportunity to gain deeper insights into the evolving business landscape. Some key takeaways included:
+
+✅ **The Rise of AI-Driven Automation** – From predictive analytics to autonomous decision-making, AI-powered solutions are transforming industries at an unprecedented pace.
+✅ **Sustainable Innovation as a Business Imperative** – Climate-conscious entrepreneurship is no longer optional; businesses are prioritizing eco-friendly models and ethical sourcing.
+✅ **Personalization & User-Centric Products** – Modern consumers demand hyper-personalized experiences, driving companies to innovate in data-driven customization.
+✅ **Decentralization & Web3 Trends** – Blockchain-based solutions are redefining trust, security, and ownership in the digital economy.
+
+<strong> Engaging with Visionary Founders </strong>
+
+One of the most inspiring aspects of this journey was interacting with driven entrepreneurs who embody the core qualities of successful founders:
+
+✔ **Passion** – A deep conviction in their ideas and the motivation to bring them to life.
+✔ **Resilience** – The ability to adapt and persevere despite setbacks and challenges.
+✔ **Innovation** – Thinking outside the box to create disruptive solutions.
+
+Each startup’s journey was a testament to the relentless pursuit of excellence and the courage to challenge conventional norms.
+
+<strong> Providing Strategic Feedback & Mentorship </strong>
+
+As a judge, my role extended beyond evaluation—I had the opportunity to mentor and guide teams by:
+
+🔹 Offering actionable insights to refine their business strategies.
+🔹 Identifying potential pitfalls and suggesting ways to mitigate risks.
+🔹 Encouraging bold thinking while maintaining realistic execution plans.
+🔹 Sharing industry knowledge to help them navigate market complexities.
+
+These interactions reinforced the importance of mentorship in the startup ecosystem. Constructive feedback, when combined with determination and agility, helps entrepreneurs sharpen their ideas and accelerate their growth trajectory.
+
+<strong> The Essence of Innovation: Reflection & Bold Action </strong>
+
+A timeless lesson from the **Bhagavad Gita** encapsulates the spirit of entrepreneurship perfectly:
+
+> *"वि वि मृश्यैतदशेषेण यथेच्छसि सि तथा कुरु।"*  
+> *"Reflect deeply, and then act according to your own understanding."*
+
+Innovation stems from questioning the status quo, challenging traditional frameworks, and daring to think beyond established boundaries. The most revolutionary ideas often emerge from deep introspection, intellectual curiosity, and the courage to execute unconventional solutions.
+
+<strong> Contributing to a Thriving Startup Ecosystem </strong>
+
+Competitions like **Blueprint** play a crucial role in nurturing early-stage startups by:
+
+✔ **Providing a Launchpad** – Enabling startups to showcase their ideas to industry experts and potential investors.
+✔ **Encouraging Strategic Thinking** – Pushing entrepreneurs to refine their business models, financial projections, and go-to-market strategies.
+✔ **Creating a Collaborative Network** – Connecting founders with mentors, investors, and fellow innovators.
+✔ **Fostering a Culture of Innovation** – Inspiring creative problem-solving and disruptive thinking.
+
+<strong> Looking Ahead: The Future of Innovation </strong>
+
+My experience at Blueprint reaffirmed my belief in the power of entrepreneurship to drive change. The passion and ingenuity I witnessed leave no doubt that the next generation of innovators will shape industries, solve pressing global challenges, and redefine the way we live and work.
+
+I look forward to continuing my journey of supporting and mentoring startups, fostering an ecosystem where bold ideas thrive, and witnessing the remarkable impact these young entrepreneurs will create.
+
+<strong> Closing Thoughts: A Celebration of Entrepreneurial Spirit </strong>
+
+Entrepreneurship is more than just building businesses—it is about resilience, adaptability, and the relentless pursuit of solutions that make a difference. Being part of **Blueprint** was a deeply fulfilling experience, and I am grateful for the opportunity to contribute to the journey of these visionary founders.
+
+The future belongs to those who dare to dream, think critically, and execute with purpose. Here’s to the changemakers, the disruptors, and the relentless innovators—may your ideas shape the world! 🚀
+      `,
+  },
   // {
   //   id: "03",
   //   img: Event1,
